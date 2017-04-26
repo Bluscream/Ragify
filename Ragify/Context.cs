@@ -89,9 +89,9 @@ namespace Ragify
                 if(Config.initializationFile.ReadBoolean("General", "showSubtitles", true))
 				    Game.DisplaySubtitle("~g~" + args.NewTrack.ArtistResource.Name + " - " + args.NewTrack.TrackResource.Name);
                 if (Config.initializationFile.ReadBoolean("General", "showNotifications", false))
-                    Game.DisplayNotification($"Now Playing:\n{args.NewTrack.ArtistResource.Name}\n{args.NewTrack.TrackResource.Name}");
+                    Game.DisplayNotification($"{args.NewTrack.ArtistResource.Name}\n{args.NewTrack.TrackResource.Name}");
                 if (Config.initializationFile.ReadBoolean("General", "showHelpNotifications", false))
-                    Game.DisplayHelp($"Now Playing:\n{args.NewTrack.ArtistResource.Name}\n{args.NewTrack.TrackResource.Name}");
+                    Game.DisplayHelp($"{args.NewTrack.ArtistResource.Name}\n{args.NewTrack.TrackResource.Name}");
 
             }
 		}
